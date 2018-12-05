@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H2M-Br-y60">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="yPG-xo-2A4">
+            <objects>
+                <viewController id="eFo-HH-0P4" customClass="SettingsViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LaD-ao-L5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-9N-yZI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="j7r-dQ-y8t">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j7r-dQ-y8t" id="h8D-KY-lPQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="危険・散歩中止レベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L62-Qz-I6c">
+                                <rect key="frame" x="23" y="358" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="厳重警戒レベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo5-2S-wQi">
+                                <rect key="frame" x="23" y="419" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="警戒レベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkC-yK-rv8">
+                                <rect key="frame" x="23" y="482" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="注意レベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozB-Lf-ayv">
+                                <rect key="frame" x="23" y="546" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="散歩はなるべく避け、涼しい室内に移動しましょう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-78-d2G">
+                                <rect key="frame" x="23" y="387" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熱中症の患犬が急激に増えるレベルです" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAa-UD-QbK">
+                                <rect key="frame" x="23" y="448" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熱中症の患犬が出始めるレベルです" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dn-6S-UHM">
+                                <rect key="frame" x="25" y="511" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="通常の生活では問題ありません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58I-FV-NrB">
+                                <rect key="frame" x="25" y="575" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90~100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7T-S0-ryX">
+                                <rect key="frame" x="205" y="358" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="70~90%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-f6-fHP">
+                                <rect key="frame" x="205" y="419" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40~70%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD3-Wa-5Pf">
+                                <rect key="frame" x="205" y="482" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0~40%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNL-ga-UBy">
+                                <rect key="frame" x="205" y="546" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熱中症危険度の凡例" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItM-zu-uL1">
+                                <rect key="frame" x="99" y="323" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6io-Et-dPB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings_00208" id="wza-Ns-e0V" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="AiL-db-osI" id="AFX-28-RtO"/>
+                        </connections>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="4gk-9N-yZI" id="KgC-vu-0Ef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4e-9t-QfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="AiL-db-osI" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="488.80000000000001" y="877.51124437781118"/>
+        </scene>
+        <!--My dog-->
+        <scene sceneID="LbG-oa-LmZ">
+            <objects>
+                <viewController id="klf-Y6-rue" customClass="MyDogViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Fx-hM-Bpu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCu-Zn-4DS">
+                                <rect key="frame" x="308" y="556" width="37" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="tap:" destination="klf-Y6-rue" eventType="touchUpInside" id="Seh-e6-ryA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-F1-KD9" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="15" y="411" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="P1z-PH-GBg"/>
+                                    <constraint firstAttribute="height" constant="100" id="hjX-P2-kDJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value="℃"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyCapType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="textOffset">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="熱中症危険度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMB-G3-S4z">
+                                <rect key="frame" x="107" y="50" width="161" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-5P-sq8" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="88" y="90.5" width="199" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7dN-cL-eAY"/>
+                                    <constraint firstAttribute="width" constant="200" id="pol-9H-7sG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                        <real key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D54-Q2-Cud" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="140" y="411" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8zo-du-VCn"/>
+                                    <constraint firstAttribute="height" constant="100" id="NHu-M6-GZM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value="℃"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyCapType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="textOffset">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltX-9k-d9C" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="265" y="411" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Kf-Br-7lH"/>
+                                    <constraint firstAttribute="height" constant="100" id="FmH-Dx-rA5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitString" value="%"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyCapType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="textOffset">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="valueDecimalFontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="気温" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc6-O2-YoB">
+                                <rect key="frame" x="15" y="360.5" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4ln-Xp-cNp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体温" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-4b-rZb">
+                                <rect key="frame" x="140" y="360.5" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q6j-KQ-btb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湿度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wro-3d-S73">
+                                <rect key="frame" x="265" y="360.5" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="n7g-kT-3js"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cKe-1K-fiC" firstAttribute="trailing" secondItem="rCu-Zn-4DS" secondAttribute="trailing" constant="30" id="1FD-ES-xYN"/>
+                            <constraint firstItem="Wro-3d-S73" firstAttribute="top" secondItem="WAK-5P-sq8" secondAttribute="bottom" constant="70" id="5o9-Wl-eDb"/>
+                            <constraint firstItem="YMB-G3-S4z" firstAttribute="top" secondItem="cKe-1K-fiC" secondAttribute="top" constant="30" id="7K9-qY-1Fj"/>
+                            <constraint firstItem="f4r-4b-rZb" firstAttribute="leading" secondItem="Lc6-O2-YoB" secondAttribute="trailing" constant="25" id="AHA-78-reP"/>
+                            <constraint firstItem="f4r-4b-rZb" firstAttribute="top" secondItem="WAK-5P-sq8" secondAttribute="bottom" constant="70" id="EHQ-Kj-M0P"/>
+                            <constraint firstItem="D54-Q2-Cud" firstAttribute="top" secondItem="f4r-4b-rZb" secondAttribute="bottom" constant="30" id="GI2-IY-kMG"/>
+                            <constraint firstItem="WAK-5P-sq8" firstAttribute="leading" secondItem="cKe-1K-fiC" secondAttribute="leading" constant="88" id="K2b-hO-5h4"/>
+                            <constraint firstItem="Lc6-O2-YoB" firstAttribute="leading" secondItem="cKe-1K-fiC" secondAttribute="leading" constant="15" id="Mq5-eO-t4K"/>
+                            <constraint firstItem="WAK-5P-sq8" firstAttribute="top" secondItem="YMB-G3-S4z" secondAttribute="bottom" constant="20" id="SuC-Ij-Cze"/>
+                            <constraint firstItem="ltX-9k-d9C" firstAttribute="top" secondItem="Wro-3d-S73" secondAttribute="bottom" constant="30" id="Uh4-GV-3Up"/>
+                            <constraint firstItem="Lc6-O2-YoB" firstAttribute="top" secondItem="WAK-5P-sq8" secondAttribute="bottom" constant="70" id="V5q-y9-jl2"/>
+                            <constraint firstItem="cKe-1K-fiC" firstAttribute="bottom" secondItem="rCu-Zn-4DS" secondAttribute="bottom" constant="30" id="VfV-eZ-wID"/>
+                            <constraint firstItem="ltX-9k-d9C" firstAttribute="leading" secondItem="D54-Q2-Cud" secondAttribute="trailing" constant="25" id="aLH-gH-fli"/>
+                            <constraint firstItem="cKe-1K-fiC" firstAttribute="trailing" secondItem="WAK-5P-sq8" secondAttribute="trailing" constant="88" id="eeI-CZ-8Xt"/>
+                            <constraint firstItem="D54-Q2-Cud" firstAttribute="leading" secondItem="gKx-F1-KD9" secondAttribute="trailing" constant="25" id="gx4-5y-JJa"/>
+                            <constraint firstItem="gKx-F1-KD9" firstAttribute="leading" secondItem="cKe-1K-fiC" secondAttribute="leading" constant="15" id="iPb-28-crV"/>
+                            <constraint firstItem="Wro-3d-S73" firstAttribute="leading" secondItem="f4r-4b-rZb" secondAttribute="trailing" constant="25" id="sXv-mm-V2S"/>
+                            <constraint firstItem="gKx-F1-KD9" firstAttribute="top" secondItem="Lc6-O2-YoB" secondAttribute="bottom" constant="30" id="vGf-Zp-EHI"/>
+                            <constraint firstItem="cKe-1K-fiC" firstAttribute="trailing" secondItem="YMB-G3-S4z" secondAttribute="trailing" constant="107" id="xKR-29-fPW"/>
+                            <constraint firstItem="YMB-G3-S4z" firstAttribute="leading" secondItem="cKe-1K-fiC" secondAttribute="leading" constant="107" id="yAf-w2-lEN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cKe-1K-fiC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My dog" image="wolf-cartoon" id="bRl-tI-ywJ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="brS-zz-jku" id="IbY-zY-X6E"/>
+                        </connections>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="dogtempBarView" destination="D54-Q2-Cud" id="Kp5-Ba-30g"/>
+                        <outlet property="humBarView" destination="ltX-9k-d9C" id="Bge-jC-8Yy"/>
+                        <outlet property="mainBarView" destination="WAK-5P-sq8" id="rfH-1p-ieR"/>
+                        <outlet property="tempBarView" destination="gKx-F1-KD9" id="o5w-m8-Edo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdl-g7-xeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="brS-zz-jku" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1440.8" y="292.80359820089956"/>
+        </scene>
+        <!--Forecast-->
+        <scene sceneID="Whw-VD-BKy">
+            <objects>
+                <viewController id="5xa-Gc-tKa" customClass="ForecastViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lbt-HN-NUz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kzb-sA-GYs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forecast" image="uptrend" id="IQf-SQ-OjU" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="4Bq-mP-QE7" id="DWy-e2-eTq"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWr-2b-XW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="4Bq-mP-QE7" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="-554"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="g8n-bq-LaP">
+            <objects>
+                <viewController id="H2M-Br-y60" customClass="LoginViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5KT-Qj-28B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI5-xa-Um8">
+                                <rect key="frame" x="20" y="100" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJX-H2-J9H">
+                                <rect key="frame" x="20" y="161" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBM-ow-Jgw">
+                                <rect key="frame" x="20" y="222" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="誕生日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGb-SN-eli">
+                                <rect key="frame" x="20" y="298" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Ak-GE-z2v">
+                                <rect key="frame" x="110" y="160" width="245" height="29"/>
+                                <segments>
+                                    <segment title="オス"/>
+                                    <segment title="メス"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-wI-dLr">
+                                <rect key="frame" x="110" y="216" width="245" height="29"/>
+                                <segments>
+                                    <segment title="外飼"/>
+                                    <segment title="室内"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="愛犬の名前を入れてください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-WD-0Tw">
+                                <rect key="frame" x="110" y="100" width="245" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ER6-kz-Lo7">
+                                <rect key="frame" x="105" y="264" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jre-61-pY1"/>
+                                    <constraint firstAttribute="width" constant="250" id="lOM-Uh-g6H"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="565115791.72853196">
+                                    <!--2018-11-28 16:36:31 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-rc-KFz">
+                                <rect key="frame" x="152" y="42" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKe-qk-onx">
+                                <rect key="frame" x="20" y="424" width="335" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="登 録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ncr-zC-FmW" kind="presentation" id="Cx4-Gh-4Fg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saz-A4-fhV">
+                                <rect key="frame" x="173" y="480" width="182" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="👑Tecollarと接続するには&gt;"/>
+                                <connections>
+                                    <segue destination="g81-u2-kgw" kind="showDetail" id="sGH-GY-yl1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EcV-WD-0Tw" firstAttribute="top" secondItem="Yie-UA-ZxS" secondAttribute="top" constant="80" id="0UV-Lu-ISZ"/>
+                            <constraint firstItem="TGb-SN-eli" firstAttribute="leading" secondItem="Yie-UA-ZxS" secondAttribute="leading" constant="20" id="3sY-3s-rRC"/>
+                            <constraint firstItem="ER6-kz-Lo7" firstAttribute="leading" secondItem="TGb-SN-eli" secondAttribute="trailing" constant="35" id="8MU-rK-jAi"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="C5n-wI-dLr" secondAttribute="trailing" constant="20" id="8ad-Qw-1vk"/>
+                            <constraint firstItem="C5n-wI-dLr" firstAttribute="leading" secondItem="oBM-ow-Jgw" secondAttribute="trailing" constant="55" id="8on-8U-HPc"/>
+                            <constraint firstItem="saz-A4-fhV" firstAttribute="top" secondItem="UKe-qk-onx" secondAttribute="bottom" constant="20" id="DiS-St-XXr"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="saz-A4-fhV" secondAttribute="trailing" constant="20" id="Hzr-Ui-RUi"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="4Ak-GE-z2v" secondAttribute="trailing" constant="20" id="Ko4-eZ-62w"/>
+                            <constraint firstItem="ER6-kz-Lo7" firstAttribute="top" secondItem="C5n-wI-dLr" secondAttribute="bottom" constant="20" id="MD3-et-WaT"/>
+                            <constraint firstItem="oBM-ow-Jgw" firstAttribute="top" secondItem="JJX-H2-J9H" secondAttribute="bottom" constant="40" id="Q5K-YM-EyF"/>
+                            <constraint firstItem="UKe-qk-onx" firstAttribute="top" secondItem="ER6-kz-Lo7" secondAttribute="bottom" constant="60" id="SYm-4w-hWH"/>
+                            <constraint firstItem="4Ak-GE-z2v" firstAttribute="leading" secondItem="JJX-H2-J9H" secondAttribute="trailing" constant="55" id="Wh0-sa-bI6"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="UKe-qk-onx" secondAttribute="trailing" constant="20" id="abS-rr-tiy"/>
+                            <constraint firstItem="TGb-SN-eli" firstAttribute="top" secondItem="oBM-ow-Jgw" secondAttribute="bottom" constant="55" id="bWG-PZ-k21"/>
+                            <constraint firstItem="oBM-ow-Jgw" firstAttribute="leading" secondItem="Yie-UA-ZxS" secondAttribute="leading" constant="20" id="bub-HG-y1I"/>
+                            <constraint firstItem="JJX-H2-J9H" firstAttribute="top" secondItem="oI5-xa-Um8" secondAttribute="bottom" constant="40" id="fbN-bs-gLW"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="EcV-WD-0Tw" secondAttribute="trailing" constant="20" id="iTu-jG-k7i"/>
+                            <constraint firstItem="JJX-H2-J9H" firstAttribute="leading" secondItem="Yie-UA-ZxS" secondAttribute="leading" constant="20" id="jZf-L2-b5c"/>
+                            <constraint firstItem="EcV-WD-0Tw" firstAttribute="leading" secondItem="oI5-xa-Um8" secondAttribute="trailing" constant="55" id="n3s-Kg-Erl"/>
+                            <constraint firstItem="4Ak-GE-z2v" firstAttribute="top" secondItem="EcV-WD-0Tw" secondAttribute="bottom" constant="30" id="npK-bE-qpG"/>
+                            <constraint firstItem="oI5-xa-Um8" firstAttribute="top" secondItem="Yie-UA-ZxS" secondAttribute="top" constant="80" id="obB-gC-PQx"/>
+                            <constraint firstItem="oI5-xa-Um8" firstAttribute="leading" secondItem="Yie-UA-ZxS" secondAttribute="leading" constant="20" id="t6n-t7-Hca"/>
+                            <constraint firstItem="Yie-UA-ZxS" firstAttribute="trailing" secondItem="ER6-kz-Lo7" secondAttribute="trailing" constant="20" id="tXs-gd-Odv"/>
+                            <constraint firstItem="C5n-wI-dLr" firstAttribute="top" secondItem="4Ak-GE-z2v" secondAttribute="bottom" constant="28" id="uVJ-60-0D7"/>
+                            <constraint firstItem="UKe-qk-onx" firstAttribute="leading" secondItem="Yie-UA-ZxS" secondAttribute="leading" constant="20" id="v98-SY-OuZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yie-UA-ZxS"/>
+                    </view>
+                    <connections>
+                        <outlet property="didTouchButton" destination="UKe-qk-onx" id="6Vt-3X-6mX"/>
+                        <outlet property="dogNameTextField" destination="EcV-WD-0Tw" id="PFm-eH-jJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ms-20-3rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338.4000000000001" y="-39.130434782608695"/>
+        </scene>
+        <!--Progress Bar View Controller-->
+        <scene sceneID="Oi2-vy-40w">
+            <objects>
+                <viewController id="Ncr-zC-FmW" customClass="ProgressBarViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OId-MS-AhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQE-WJ-xbG">
+                                <rect key="frame" x="85" y="549" width="205" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Tecollar へようこそ"/>
+                                <connections>
+                                    <segue destination="H1k-ZY-a1d" kind="presentation" id="sVu-yU-iDd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dQE-WJ-xbG" firstAttribute="leading" secondItem="DbT-ug-Jtu" secondAttribute="leading" constant="85" id="6Pb-Yk-KoE"/>
+                            <constraint firstItem="DbT-ug-Jtu" firstAttribute="bottom" secondItem="dQE-WJ-xbG" secondAttribute="bottom" constant="85" id="DHl-MM-Wu4"/>
+                            <constraint firstItem="DbT-ug-Jtu" firstAttribute="trailing" secondItem="dQE-WJ-xbG" secondAttribute="trailing" constant="85" id="r6H-NP-huk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DbT-ug-Jtu"/>
+                    </view>
+                    <connections>
+                        <outlet property="didTouchButton" destination="dQE-WJ-xbG" id="qzv-Rb-rFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9q-FY-bVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399.19999999999999" y="-39.130434782608695"/>
+        </scene>
+        <!--Tecollar 設定-->
+        <scene sceneID="1j2-WN-eqs">
+            <objects>
+                <viewController id="Nkx-ny-p7c" customClass="TecollerSettingsViewController" customModule="Tecoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ye-Bm-6HH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tecollar 受信設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRk-Wi-XN5">
+                                <rect key="frame" x="30" y="84" width="123" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="受信する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WG-vA-rhR">
+                                <rect key="frame" x="15" y="127" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バックグラウンドでも受信する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYH-Ox-Ae5">
+                                <rect key="frame" x="15" y="178" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjA-7y-0oW">
+                                <rect key="frame" x="278" y="122" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InL-eb-wn2">
+                                <rect key="frame" x="278" y="171" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tecollerの受信を有効にすると、バッテリーの減りが早くなります。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-ro-PfG">
+                                <rect key="frame" x="16" y="223" width="344" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tecollar 設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grP-Vn-txf">
+                                <rect key="frame" x="30" y="324" width="93" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="シリアル番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVR-fX-yMA">
+                                <rect key="frame" x="16" y="370" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="シリアル番号を入力ください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-PN-2Qb">
+                                <rect key="frame" x="151" y="365" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7WG-vA-rhR" firstAttribute="leading" secondItem="3Tk-Wm-NTB" secondAttribute="leading" constant="15" id="3gE-nO-kih"/>
+                            <constraint firstItem="VYH-Ox-Ae5" firstAttribute="leading" secondItem="3Tk-Wm-NTB" secondAttribute="leading" constant="15" id="EWC-Lh-NRK"/>
+                            <constraint firstItem="7WG-vA-rhR" firstAttribute="top" secondItem="eRk-Wi-XN5" secondAttribute="bottom" constant="25" id="OrT-ra-BlM"/>
+                            <constraint firstItem="eRk-Wi-XN5" firstAttribute="top" secondItem="3Tk-Wm-NTB" secondAttribute="top" constant="20" id="lrI-MK-x5f"/>
+                            <constraint firstItem="VYH-Ox-Ae5" firstAttribute="top" secondItem="7WG-vA-rhR" secondAttribute="bottom" constant="30" id="wUY-JQ-Y7B"/>
+                            <constraint firstItem="eRk-Wi-XN5" firstAttribute="leading" secondItem="3Tk-Wm-NTB" secondAttribute="leading" constant="30" id="wZR-Tv-Sfy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Tk-Wm-NTB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tecollar 設定" id="EUV-kF-ABs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="gfs-KO-Wfa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="H2M-Br-y60" kind="presentation" id="2p6-ef-w1l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paR-9E-HPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399.19999999999999" y="766.86656671664173"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="0e7-0Z-NV6">
+            <objects>
+                <tabBarController id="H1k-ZY-a1d" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Ub-B1-Xzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="klf-Y6-rue" kind="relationship" relationship="viewControllers" id="aMe-bm-VNv"/>
+                        <segue destination="5xa-Gc-tKa" kind="relationship" relationship="viewControllers" id="8YX-jL-LZ3"/>
+                        <segue destination="eFo-HH-0P4" kind="relationship" relationship="viewControllers" id="SGE-uG-CoS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieH-DN-aOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="-39"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mMq-QT-oXC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g81-u2-kgw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="POe-bX-Deb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nkx-ny-p7c" kind="relationship" relationship="rootViewController" id="WO4-hL-LGY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewU-x1-wAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338.4000000000001" y="766.86656671664173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings_00208" width="30" height="30"/>
+        <image name="uptrend" width="30" height="30"/>
+        <image name="wolf-cartoon" width="30" height="30"/>
+    </resources>
+</document>

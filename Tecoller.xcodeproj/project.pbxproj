@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		1C88493921AD9E6400647AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88493821AD9E6400647AE1 /* AppDelegate.swift */; };
-		1C88493B21AD9E6400647AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88493A21AD9E6400647AE1 /* ViewController.swift */; };
 		1C88493E21AD9E6400647AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C88493C21AD9E6400647AE1 /* Main.storyboard */; };
 		1C88494021AD9E6800647AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C88493F21AD9E6800647AE1 /* Assets.xcassets */; };
 		1C88494321AD9E6800647AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C88494121AD9E6800647AE1 /* LaunchScreen.storyboard */; };
+		1CD9465121ADAE0F007B3B30 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9465021ADAE0F007B3B30 /* ForecastViewController.swift */; };
+		1CD9465321ADAE2A007B3B30 /* MyDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9465221ADAE2A007B3B30 /* MyDogViewController.swift */; };
+		1CD9465521ADAE39007B3B30 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9465421ADAE39007B3B30 /* SettingsViewController.swift */; };
+		1CD9465821AEEEFE007B3B30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9465721AEEEFE007B3B30 /* LoginViewController.swift */; };
+		1CD9466121B04C9B007B3B30 /* TecollerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9466021B04C9B007B3B30 /* TecollerSettingsViewController.swift */; };
+		1CD9466321B3A636007B3B30 /* ProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD9466221B3A635007B3B30 /* ProgressBarViewController.swift */; };
+		F06D4DDA2B15512BAC32F35B /* Pods_Tecoller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431EFED592D6717DDF6E52CA /* Pods_Tecoller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C88493521AD9E6400647AE1 /* Tecoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tecoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C88493821AD9E6400647AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C88493A21AD9E6400647AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C88493D21AD9E6400647AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C88493F21AD9E6800647AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C88494221AD9E6800647AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C88494421AD9E6800647AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD9465021ADAE0F007B3B30 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		1CD9465221ADAE2A007B3B30 /* MyDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDogViewController.swift; sourceTree = "<group>"; };
+		1CD9465421ADAE39007B3B30 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1CD9465721AEEEFE007B3B30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1CD9466021B04C9B007B3B30 /* TecollerSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecollerSettingsViewController.swift; sourceTree = "<group>"; };
+		1CD9466221B3A635007B3B30 /* ProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarViewController.swift; sourceTree = "<group>"; };
+		324C5F24A22D600F9CDFC676 /* Pods-Tecoller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tecoller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tecoller/Pods-Tecoller.debug.xcconfig"; sourceTree = "<group>"; };
+		33C22F9B5D1ADE340BCF5F7D /* Pods-Tecoller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tecoller.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tecoller/Pods-Tecoller.release.xcconfig"; sourceTree = "<group>"; };
+		431EFED592D6717DDF6E52CA /* Pods_Tecoller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tecoller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06D4DDA2B15512BAC32F35B /* Pods_Tecoller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				1C88493721AD9E6400647AE1 /* Tecoller */,
 				1C88493621AD9E6400647AE1 /* Products */,
+				83456A767E55B9A75FCC9736 /* Pods */,
+				1F466099ADD145E2F491C593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,52 @@
 		1C88493721AD9E6400647AE1 /* Tecoller */ = {
 			isa = PBXGroup;
 			children = (
+				1CD9466521B80737007B3B30 /* Storyboards */,
+				1CD9466421B806EA007B3B30 /* Controllers */,
 				1C88493821AD9E6400647AE1 /* AppDelegate.swift */,
-				1C88493A21AD9E6400647AE1 /* ViewController.swift */,
-				1C88493C21AD9E6400647AE1 /* Main.storyboard */,
 				1C88493F21AD9E6800647AE1 /* Assets.xcassets */,
-				1C88494121AD9E6800647AE1 /* LaunchScreen.storyboard */,
 				1C88494421AD9E6800647AE1 /* Info.plist */,
 			);
 			path = Tecoller;
+			sourceTree = "<group>";
+		};
+		1CD9466421B806EA007B3B30 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CD9465021ADAE0F007B3B30 /* ForecastViewController.swift */,
+				1CD9465721AEEEFE007B3B30 /* LoginViewController.swift */,
+				1CD9465221ADAE2A007B3B30 /* MyDogViewController.swift */,
+				1CD9465421ADAE39007B3B30 /* SettingsViewController.swift */,
+				1CD9466021B04C9B007B3B30 /* TecollerSettingsViewController.swift */,
+				1CD9466221B3A635007B3B30 /* ProgressBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1CD9466521B80737007B3B30 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1C88494121AD9E6800647AE1 /* LaunchScreen.storyboard */,
+				1C88493C21AD9E6400647AE1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F466099ADD145E2F491C593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				431EFED592D6717DDF6E52CA /* Pods_Tecoller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83456A767E55B9A75FCC9736 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				324C5F24A22D600F9CDFC676 /* Pods-Tecoller.debug.xcconfig */,
+				33C22F9B5D1ADE340BCF5F7D /* Pods-Tecoller.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C88494721AD9E6800647AE1 /* Build configuration list for PBXNativeTarget "Tecoller" */;
 			buildPhases = (
+				F71081FA9310CABB7FC9FEF8 /* [CP] Check Pods Manifest.lock */,
 				1C88493121AD9E6400647AE1 /* Sources */,
 				1C88493221AD9E6400647AE1 /* Frameworks */,
 				1C88493321AD9E6400647AE1 /* Resources */,
+				A6D1977CF6884A2610625E97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +187,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A6D1977CF6884A2610625E97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tecoller/Pods-Tecoller-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tecoller/Pods-Tecoller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71081FA9310CABB7FC9FEF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tecoller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C88493121AD9E6400647AE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C88493B21AD9E6400647AE1 /* ViewController.swift in Sources */,
 				1C88493921AD9E6400647AE1 /* AppDelegate.swift in Sources */,
+				1CD9466321B3A636007B3B30 /* ProgressBarViewController.swift in Sources */,
+				1CD9466121B04C9B007B3B30 /* TecollerSettingsViewController.swift in Sources */,
+				1CD9465121ADAE0F007B3B30 /* ForecastViewController.swift in Sources */,
+				1CD9465321ADAE2A007B3B30 /* MyDogViewController.swift in Sources */,
+				1CD9465821AEEEFE007B3B30 /* LoginViewController.swift in Sources */,
+				1CD9465521ADAE39007B3B30 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +393,7 @@
 		};
 		1C88494821AD9E6800647AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324C5F24A22D600F9CDFC676 /* Pods-Tecoller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +412,7 @@
 		};
 		1C88494921AD9E6800647AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C22F9B5D1ADE340BCF5F7D /* Pods-Tecoller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
